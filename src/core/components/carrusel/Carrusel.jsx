@@ -23,32 +23,42 @@ export const Carousel_component = () => {
     { image: "", alt: "Slide 3" },
   ];
 
-  return (
-    <div className="contenedor-carrusel">
-      <Carousel
-        selectedItem={selectedIndex}
-        showArrows={false}
-        autoPlay={false}
-        infiniteLoop={true}
-        showThumbs={false}
-        showStatus={false}
-        showIndicators={false}
-        onChange={(index) => setSelectedIndex(index)}
-      >
-        {slides.map((slide, i) => (
-          <div key={i} className="slide-derecha">
-            <img src={slide.image} alt={slide.alt} />
-          </div>
-        ))}
-      </Carousel>
+ return (
+    <div className="contenedor-principal">
+      <div className="contenedor-texto">
+        <h1>Delicious Steaks</h1>
+        <p className="rating">
+          <strong>4.4/5</strong> ⭐⭐⭐⭐<br />
+          From <strong>1,206+</strong> Customer Reviews
+        </p>
+      </div>
 
-      <div className="botones">
-        <button onClick={handlePrev} className="boton-anterior">
-          <i className="bi bi-arrow-up-left"></i>
-        </button>
-        <button onClick={handleNext} className="boton-siguiente">
-          <i className="bi bi-arrow-up-right"></i>
-        </button>
+      <div className="contenedor-carrusel">
+        <Carousel
+          selectedItem={selectedIndex}
+          showArrows={false}
+          autoPlay={false}
+          infiniteLoop={true}
+          showThumbs={false}
+          showStatus={false}
+          showIndicators={false}
+          onChange={(index) => setSelectedIndex(index)}
+        >
+          {slides.map((slide, i) => (
+            <div key={i} className="slide-derecha">
+              <img src={slide.image} alt={slide.alt} />
+            </div>
+          ))}
+        </Carousel>
+
+        <div className="botones">
+          <button onClick={handlePrev} className="boton-anterior">
+            <i className="bi bi-arrow-up-left"></i>
+          </button>
+          <button onClick={handleNext} className="boton-siguiente">
+            <i className="bi bi-arrow-up-right"></i>
+          </button>
+        </div>
       </div>
     </div>
   );
