@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { FormComponent } from './form/components/formComponent'
 import { Carousel_component } from "./core/components/carrusel/Carrusel";
+import { Img_statica } from './core/components/img_statica/img_statica'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
     <>
       <FormComponent/>
       <Carousel_component />
+      <Img_statica/>
     </>
   )
 }
