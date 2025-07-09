@@ -1,15 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import { FormComponent } from './form/components/formComponent'
+import { Navbar } from './core/components/navbar'
+import { Footer } from './core/components/footer'
 
 function App() {
 
 
   return (
     <>
-      <FormComponent/>
+      <Navbar/>
+      <Footer/>
     </>
   )
 }
