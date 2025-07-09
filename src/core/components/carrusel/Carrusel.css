@@ -1,0 +1,48 @@
+.contenedor-carrusel {
+    background-color: #111;
+    padding: 40px 60px;
+    position: relative;
+    color: white;
+}
+
+.slide-derecha img {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.botones {
+    position: absolute;
+    bottom: 40px;
+    right: 60px;
+    display: flex;
+    gap: 10px;
+}
+
+.boton-anterior {
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 16px;
+    cursor: pointer;
+    background-color: orange;
+}
+
+.boton-siguiente {
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 16px;
+    cursor: pointer;
+    background-color: #e74c3c;
+}
+
+
+.boton-anterior:hover {
+    background-color: black;
+}
+
+.boton-siguiente:hover {
+    background-color: black;
+}
