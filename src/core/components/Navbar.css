@@ -1,3 +1,25 @@
 .navbarstyle { 
     padding: 20px;
 }
+
+.nabvar-link{
+    text-decoration: none;
+    color: rgb(81, 81, 81);
+    cursor: pointer;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.nabvar-link:hover{
+    color: tomato;
+    text-decoration: none;
+}
+
+.navbar-boton{
+    cursor: pointer;
+    background-color: rgb(255, 0, 0);
+}
+
+.navbar-boton:hover{
+    background-color: rgb(223, 0, 0);
+}
