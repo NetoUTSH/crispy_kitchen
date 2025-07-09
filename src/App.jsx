@@ -12,7 +12,6 @@ function App() {
         <Route path="/form" element={<FormComponent/>}/>
       </Routes>
     </Router>
-
     </>
   )
 }
