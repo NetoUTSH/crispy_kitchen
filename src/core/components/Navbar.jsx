@@ -5,7 +5,7 @@ export const Navbar = () => {
     <>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <h5>           
+          <h5 className="navbar-list">           
              Krispy Kitchens
           </h5>
           <button
@@ -22,39 +22,37 @@ export const Navbar = () => {
 
 
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav" className="navbar-list">
               <li class="nav-item">
-                <a className="nabvar-link"  class="nav-link active" aria-current="page" href="#">
+                <a class="nav-link active" aria-current="page" href="#" className="nabvar-link">
                   Pagina principal
                 </a>
               </li>
               <li class="nav-item">
-                <a className="nabvar-link" class="nav-link active" aria-current="page" href="#">
+                <a class="nav-link active" aria-current="page" href="#" className="nabvar-link">
                   Historia
                 </a>
               </li>
               <li class="nav-item">
-                <a className="nabvar-link" class="nav-link active" aria-current="page" href="#">
+                <a class="nav-link active" aria-current="page" href="#" className="nabvar-link">
                   Menu
                 </a>
               </li>
               <li class="nav-item">
-                <a className="nabvar-link" class="nav-link active" aria-current="page" href="#">
+                <a class="nav-link active" aria-current="page" href="#" className="nabvar-link">
                   Nuestras actualizaciones
                 </a>
               </li>
               <li class="nav-item">
-                <a className="nabvar-link" class="nav-link active" aria-current="page" href="#">
+                <a class="nav-link active" aria-current="page" href="#" className="nabvar-link">
                   Contactos
                 </a>
               </li>
                <li class="nav-item">
-                <button className="navbar-boton" type="button" class="btn-danger">Reservacion</button>
+                <button type="button" class="btn-danger" className="navbar-boton">Reservacion</button>
               </li>
             </ul>
           </div>
-
-
         </div>
       </nav>
     </>
