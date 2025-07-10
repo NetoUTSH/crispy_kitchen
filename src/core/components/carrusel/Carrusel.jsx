@@ -18,9 +18,9 @@ export const Carousel_component = () => {
   };
 
   const slides = [
-    { image: "", alt: "Slide 1" },
-    { image: "", alt: "Slide 2" },
-    { image: "", alt: "Slide 3" },
+    { image: "./comi1.avif", alt: "Slide 1" },
+    { image: "./comi2.webp", alt: "Slide 2" },
+    { image: "./comi3.png", alt: "Slide 3" },
   ];
 
  return (

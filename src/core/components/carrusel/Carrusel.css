@@ -2,10 +2,10 @@
 .contenedor-principal {
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     background-color: black;
     color: white;
-    background-image: url("");
+    background-image: url("./hestia.jpg");
 }
 
 .contenedor-texto {
@@ -68,4 +68,46 @@
 
 .boton-siguiente:hover {
     background-color: black;
+}
+
+@media (max-width: 1024px) {
+  .contenedor-principal {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .contenedor-texto,
+  .contenedor-carrusel {
+    padding: 30px;
+  }
+
+  .slide-derecha img {
+    max-height: 300px;
+  }
+
+  .botones {
+    position: static;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contenedor-texto h1 {
+    font-size: 2rem;
+  }
+
+  .contenedor-texto .rating {
+    font-size: 1rem;
+  }
+
+  .slide-derecha img {
+    max-height: 200px;
+  }
+
+  .boton-anterior,
+  .boton-siguiente {
+    padding: 8px 12px;
+    font-size: 1rem;
+  }
 }

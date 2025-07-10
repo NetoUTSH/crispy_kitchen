@@ -11,7 +11,6 @@ function App() {
 
   return (
     <>
-      <FormComponent/>
       <Carousel_component />
       <Img_statica/>
     </>

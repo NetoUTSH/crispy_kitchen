@@ -1,8 +1,22 @@
 .img_statica-container {
-  background-image: url("");
-  height: 100vh;
+  background-image: url("./hades.png");
+  height: 50vh;
   width: 100%;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+}
+
+@media (max-width: 1024px) {
+  .img_statica-container {
+    height: 40vh;
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 600px) {
+  .img_statica-container {
+    height: 30vh;
+    background-attachment: fixed;
+  }
 }
