@@ -1,10 +1,9 @@
 import './App.css'
-import { FormComponent } from './form/components/formComponent'
+import { FormComponent } from './core/calendly-form/components/FormComponent'
 import { Navbar } from './core/components/navbar'
 import { Footer } from './core/components/footer'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
-import { FormComponent } from './form/components/formComponent'
 import { Carousel_component } from "./core/components/carrusel/Carrusel";
 import { Img_statica } from './core/components/img_statica/img_statica'
 

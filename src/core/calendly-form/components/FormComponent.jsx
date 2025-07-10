@@ -1,6 +1,6 @@
 import React from 'react'
 import { InlineWidget } from 'react-calendly'
-import '../css/FormComponentStyle.css'
+import './FormComponentStyle.css'
 import { WpButtonComponent } from '../../landing-page/components/WpButtonComponent/WpButtonComponent'
 
 export const FormComponent = () => {
