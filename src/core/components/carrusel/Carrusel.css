@@ -1,0 +1,113 @@
+
+.contenedor-principal {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    color: white;
+    background-image: url("./hestia.jpg");
+}
+
+.contenedor-texto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.contenedor-texto .rating {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.contenedor-carrusel {
+    flex: 1;
+    position: relative;
+    padding: 40px 60px;
+}
+
+.slide-derecha img {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+}
+
+.botones {
+    position: absolute;
+    bottom: 40px;
+    right: 60px;
+    display: flex;
+}
+
+.boton-anterior{
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: orange;
+}
+.boton-siguiente {
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: #e74c3c;
+}
+
+.boton-anterior:hover{
+    background-color: black;
+}
+
+.boton-siguiente:hover {
+    background-color: black;
+}
+
+@media (max-width: 1024px) {
+  .contenedor-principal {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .contenedor-texto,
+  .contenedor-carrusel {
+    padding: 30px;
+  }
+
+  .slide-derecha img {
+    max-height: 300px;
+  }
+
+  .botones {
+    position: static;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contenedor-texto h1 {
+    font-size: 2rem;
+  }
+
+  .contenedor-texto .rating {
+    font-size: 1rem;
+  }
+
+  .slide-derecha img {
+    max-height: 200px;
+  }
+
+  .boton-anterior,
+  .boton-siguiente {
+    padding: 8px 12px;
+    font-size: 1rem;
+  }
+}
