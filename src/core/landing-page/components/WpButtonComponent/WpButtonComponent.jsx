@@ -1,5 +1,5 @@
 import React from 'react'
-import '../WpButtonComponent/WpButtonStyle.css'
+import './WpButtonStyle.css'
 
 export const WpButtonComponent = () => {
   return (
