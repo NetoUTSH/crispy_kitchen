@@ -1,0 +1,12 @@
+import React from 'react'
+import './WpButtonStyle.css'
+
+export const WpButtonComponent = () => {
+  return (
+    <>
+    <a href="" className='float-wa' >
+        <i className='bi bi-whatsapp icon'></i>
+    </a>
+    </>
+  )
+}
