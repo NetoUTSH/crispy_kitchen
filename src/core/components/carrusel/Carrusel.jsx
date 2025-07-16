@@ -24,7 +24,7 @@ export const Carousel_component = () => {
   ];
 
  return (
-    <div className="contenedor-principal">
+    <div className="contenedor-principal ">
       <div className="contenedor-texto">
         <h1>Delicious Steaks</h1>
         <p className="rating">

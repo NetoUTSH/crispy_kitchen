@@ -1,0 +1,6 @@
+.conten{
+    width: 99.5vw;
+    background-color: white;
+
+    margin-left: calc(-50vw + 50%);
+}

@@ -1,7 +1,8 @@
 .img_statica-container {
-  background-image: url("./hades.png");
+  background-image: url("https://cdn.discordapp.com/attachments/1119139672925405256/1395179867670057122/image.png?ex=68798201&is=68783081&hm=90bc4165a2bc508184d3b4dc9ee8dc7c1efeddea7ffd437711cf60b16d334f5c&");
   height: 50vh;
-  width: 100%;
+  width: 99.5vw;
+  margin-left: calc(-50vw + 50%);
   background-attachment: fixed;
   background-position: center;
   background-size: 100% 100%;
@@ -10,7 +11,7 @@
 @media (max-width: 1024px) {
   .img_statica-container {
     height: 40vh;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size:  100% 100%;
     background-repeat: no-repeat; 
   }
@@ -19,7 +20,7 @@
 @media (max-width: 600px) {
   .img_statica-container {
     height: 30vh;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size:  100% 100%;
     background-repeat: no-repeat; 
   }
