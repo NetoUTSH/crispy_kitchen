@@ -9,7 +9,7 @@ export const FormComponent = () => {
     <>
     
     <InlineWidget  styles={{ Width: "1200px", height: "700px" }} url='https://calendly.com/2022260-utsh/30min'/>  
-    <WpButtonComponent/>
+
 
      
     </>

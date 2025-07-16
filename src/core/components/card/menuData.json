@@ -1,0 +1,65 @@
+[
+  {
+    "nombre": "Aguachile Verde",
+    "descripcion": "Explosión de frescura con camarones marinados en salsa de chiles verdes, limón y cilantro, servidos con pepino y cebolla morada para un toque vibrante y picante.",
+    "imagen": "src/assets/aguachile.jpg",
+    "precio": 149,
+    "estrellas": 5
+  },
+  {
+    "nombre": "Pizza Artesanal",
+    "descripcion": "Masa hecha a mano, ingredientes frescos y combinaciones únicas que se funden en cada bocado: una experiencia que eleva la pizza a otro nivel.",
+    "imagen": "src/assets/pizza.jpg",
+    "precio": 179,
+    "estrellas": 4
+  },
+  {
+    "nombre": "Burrito",
+    "descripcion": "Tortilla suave rellena de jugosos ingredientes, arroz sazonado y salsas especiales que despiertan los sentidos con cada mordida.",
+    "imagen": "src/assets/burrito.jpg",
+    "precio": 109,
+    "estrellas": 4
+  },
+  {
+    "nombre": "Pollo a la Naranja",
+    "descripcion": "Crujiente por fuera, jugoso por dentro: trozos de pollo bañados en una irresistible salsa agridulce de naranja.",
+    "imagen": "src/assets/pollo-naranja.jpg",
+    "precio": 139,
+    "estrellas": 3
+  },
+  {
+    "nombre": "Pan Francés",
+    "descripcion": "Delicioso pan bañado en mezcla de huevo y leche, dorado a la perfección, con notas de canela y azúcar glas.",
+    "imagen": "src/assets/pan-frances.jpg",
+    "precio": 89,
+    "estrellas": 4
+  },
+  {
+    "nombre": "Hot Cakes",
+    "descripcion": "Esponjosos y llenos de sabor, con mantequilla derretida y miel de maple: un clásico que nunca pasa de moda.",
+    "imagen": "src/assets/hotcakes.jpg",
+    "precio": 99,
+    "estrellas": 5
+  },
+  {
+    "nombre": "Ribeye en Salsa Agridulce",
+    "descripcion": "Corte premium sellado, bañado en salsa agridulce que realza su sabor con un contraste exquisito.",
+    "imagen": "src/assets/ribeye.jpg",
+    "precio": 229,
+    "estrellas": 5
+  },
+  {
+    "nombre": "Salmón en Salsas Negras",
+    "descripcion": "Filete de salmón fresco sellado, cubierto con salsas negras orientales que aportan un toque gourmet.",
+    "imagen": "src/assets/salmon.jpg",
+    "precio": 199,
+    "estrellas": 4
+  },
+  {
+    "nombre": "Ensalada Verde con Nueces",
+    "descripcion": "Hojas verdes, nueces caramelizadas, queso y aderezo ligero que combinan texturas y sabores.",
+    "imagen": "src/assets/ensalada.jpg",
+    "precio": 129,
+    "estrellas": 4
+  }
+]

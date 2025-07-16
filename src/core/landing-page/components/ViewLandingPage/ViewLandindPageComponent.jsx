@@ -1,13 +1,12 @@
-import { Navbar } from '../../../components/Navbar'
-import { Footer } from '../../../components/Footer'
-
+import React from 'react'
+import { Navbar } from '../../../components/navbar/Navbar'
+import { Footer} from '../../../components/footer/Footer'
 
 export const ViewLandindPageComponent = () => {
   return (
-   <>
-   <Navbar></Navbar>
-   <Footer></Footer>
-  </>
-
+<>
+    <Navbar></Navbar>
+    <Footer></Footer>
+</>
   )
 }
