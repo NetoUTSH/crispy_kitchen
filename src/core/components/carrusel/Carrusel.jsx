@@ -18,9 +18,9 @@ export const Carousel_component = () => {
   };
 
   const slides = [
-    { image: "./comi1.avif", alt: "Slide 1" },
-    { image: "./comi2.webp", alt: "Slide 2" },
-    { image: "./comi3.png", alt: "Slide 3" },
+    { image: "https://cdn.discordapp.com/attachments/1120503923942371369/1395181107703713804/comida1.jpg?ex=68798329&is=687831a9&hm=48021262f0b29eeac7917ab1509014445aaf9fb96d95bdaae8ac02f502dea104&", alt: "Slide 1" },
+    { image: "https://cdn.discordapp.com/attachments/1120503923942371369/1395181107976208384/comida2.jpg?ex=68798329&is=687831a9&hm=6e0c44f81e36fe0991b91bc84a5291b76cdfa60eabee0ec26616f9b2575e03bd&", alt: "Slide 2" },
+    { image: "https://cdn.discordapp.com/attachments/1120503923942371369/1395181108315820062/comida3.jpg?ex=68798329&is=687831a9&hm=300e19b936078f61c7415cad127d58260cb3af6c719605244747cbb7a4e54f56&", alt: "Slide 3" },
   ];
 
  return (

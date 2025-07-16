@@ -1,12 +1,13 @@
 .contenedor-principal {
     display: flex;
     width: 99.5vw;
-    margin-left: calc(-50vw + 50%);
-    height: 99vh;
+    height: 100vh;
     background-color: black;
     color: white;
-    background-image: url("./hestia.jpg");
+    background-image: url("https://cdn.discordapp.com/attachments/1120503923942371369/1395188754758504568/carrusel.jpg?ex=68798a48&is=687838c8&hm=dbb0abc76c33c7ecc5530f4db82ea202720535259d0ab522ec183d16acc80e04&");
+    
     background-size:  100% 100%;
+    margin-left: calc(-50vw + 50%);
 }
 
 .contenedor-texto {
@@ -34,7 +35,7 @@
 .slide-derecha img {
     width: 100%;
     object-fit: cover;
-    height: 330px; 
+    height:89.2vh ; 
 }
 
 .botones {
@@ -85,7 +86,7 @@
   }
 
   .slide-derecha img {
-    height: 300px; 
+    height: 260px; 
   }
 
   .botones {
@@ -109,12 +110,11 @@
   }
 
   .slide-derecha img {
-    height: 180px;
+    height: 200px;
   }
 
   .boton-anterior,
   .boton-siguiente {
     padding: 8px 12px;
     font-size: 1rem;
-  }
-}
+  }}

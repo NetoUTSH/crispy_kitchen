@@ -22,9 +22,7 @@ export const ViewLandindPageComponent = () => {
       
       
       
-      <div className="bg-light p-5 pl-5">
-        
-      </div>
+      
       
       
       
