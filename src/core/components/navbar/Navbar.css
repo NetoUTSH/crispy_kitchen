@@ -21,6 +21,9 @@
     cursor: pointer;
     background-color: rgb(255, 0, 0);
 }
+.navbar-link-no{
+    text-decoration: none;
+}
 
 .navbar-boton:hover{
     background-color: rgb(175, 0, 0);

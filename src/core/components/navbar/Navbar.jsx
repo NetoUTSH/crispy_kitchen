@@ -1,15 +1,21 @@
 import "./navbar.css"
+import { Link } from "react-router-dom";
+
 
 export const Navbar = () => {
+
+  
+
+
   return (
     <>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <h5 className="navbar-list">           
-             Krispy Kitchens
-          </h5>
+      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <div className="container-fluid">
+          <h1>           
+             Crispy Kitchen
+          </h1>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -17,7 +23,7 @@ export const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
 
 
@@ -39,7 +45,7 @@ export const Navbar = () => {
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#" className="nabvar-link">
+                <a aria-current="page" href="#" className="nabvar-link">
                   Nuestras actualizaciones
                 </a>
               </li>
@@ -48,8 +54,10 @@ export const Navbar = () => {
                   Contactos
                 </a>
               </li>
-               <li class="nav-item">
-                <button type="button" class="btn-danger" className="navbar-boton">Reservacion</button>
+               <li className="nav-item">
+               <Link to='/form' className="navbar-link-no">
+               <button redi type="button" className="navbar-boton btn btn-danger">Reservacion</button>
+               </Link>
               </li>
             </ul>
           </div>
