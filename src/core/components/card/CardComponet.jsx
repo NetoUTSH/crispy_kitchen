@@ -19,7 +19,7 @@ const Card = () => {
 
   return (
     <div className="container my-5">
-      <h2 className="text-center fw-bold mb-5">Special Menus</h2>
+      
       <div className="row justify-content-center">
         {menuData.map((platillo, index) => (
           <div
