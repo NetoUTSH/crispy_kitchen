@@ -3,13 +3,15 @@ import { FormComponent } from './core/calendly-form/components/FormComponent'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
 import { ViewLandindPageComponent } from './core/landing-page/components/ViewLandingPage/ViewLandindPageComponent'
+import { Navbar } from './core/components/navbar/Navbar'
+
 function App() {
   return (
     <>
 
      
     <Router>
-      <Routes>
+      <Routes>        
         <Route path="/form" element={<FormComponent/>}/>
         <Route path="/" element={<ViewLandindPageComponent/>}/>
       </Routes>

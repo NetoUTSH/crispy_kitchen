@@ -1,17 +1,12 @@
-import { WpButtonComponent } from '../WpButtonComponent/WpButtonComponent'
-import Card from '../../../../core/components/card/CardComponet'
-
-
+import React from 'react'
+import { Navbar } from '../../../components/navbar/Navbar'
+import { Footer} from '../../../components/footer/Footer'
 
 export const ViewLandindPageComponent = () => {
   return (
 <>
-<Card/>
-
-
-
-<WpButtonComponent></WpButtonComponent>
-
+    <Navbar></Navbar>
+    <Footer></Footer>
 </>
   )
 }
