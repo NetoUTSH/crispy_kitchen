@@ -1,7 +1,13 @@
-import React from 'react'
+import { Navbar } from '../../../components/Navbar'
+import { Footer } from '../../../components/Footer'
+
 
 export const ViewLandindPageComponent = () => {
   return (
-    <div>ViewLandindPageComponent</div>
+   <>
+   <Navbar></Navbar>
+   <Footer></Footer>
+  </>
+
   )
 }

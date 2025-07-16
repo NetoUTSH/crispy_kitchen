@@ -1,4 +1,4 @@
-import "./navbar.css"
+import "C:\Users\vivobook\Desktop\crispy_kitchen\src\core\components\Navbar.css"
 
 export const Navbar = () => {
   return (
