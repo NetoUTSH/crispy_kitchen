@@ -4,13 +4,15 @@
   width: 100%;
   background-attachment: fixed;
   background-position: center;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 @media (max-width: 1024px) {
   .img_statica-container {
     height: 40vh;
     background-attachment: fixed;
+    background-size:  100% 100%;
+    background-repeat: no-repeat; 
   }
 }
 
@@ -18,5 +20,7 @@
   .img_statica-container {
     height: 30vh;
     background-attachment: fixed;
+    background-size:  100% 100%;
+    background-repeat: no-repeat; 
   }
 }
