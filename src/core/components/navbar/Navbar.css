@@ -1,0 +1,57 @@
+.custom-link {
+    text-decoration: none !important;
+    color: rgb(81, 81, 81) !important;
+    cursor: pointer !important;
+    transition: color 0.3s ease !important;
+    margin: 0 30px !important;
+    font-size: large !important;
+}
+
+.custom-link:hover {
+    color: tomato !important;
+    text-decoration: none !important;
+}
+
+.navbar-title {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.reservation-btn {
+  padding: 8px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.reservation-btn:hover {
+  background-color: #ca0000;
+}
+
+
+.navbar-title {
+  font-size: 1.8rem;
+  margin-right: 1rem;
+  font-weight: 700;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.navbar-title:hover {
+  color: #dc3545;
+  cursor: pointer;
+}
+
+
+.reservation-btn {
+  padding: 10px 30px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  background-color: #dc3545;
+  transition: background-color 0.3s ease;
+}
+
+.reservation-btn:hover {
+  background-color: #c82333;
+}
