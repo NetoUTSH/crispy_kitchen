@@ -4,7 +4,10 @@ import { Footer } from "../../../components/footer/Footer";
 import { Carousel_component } from "../../../components/carrusel/Carrusel.jsx";
 import { EventCardGrid } from "../../../components/EventCardGrid.jsx";
 import { Img_statica } from "../../../components/img_statica/img_statica.jsx";
-import {Card} from '../../../components/card/CardComponet.jsx'
+import { Card } from "../../../components/card/cardComponet.jsx";
+import { WpButtonComponent } from "../WpButtonComponent/WpButtonComponent.jsx";
+
+
 export const ViewLandindPageComponent = () => {
   return (
     <>
@@ -14,19 +17,12 @@ export const ViewLandindPageComponent = () => {
     <Card/>
     <Img_statica />
     <EventCardGrid/>
-     
+    <WpButtonComponent></WpButtonComponent>
+    <Footer></Footer>
     
-      
-       
-      
-      
-      
-      
-      
-      
-      
-      
-      <Footer></Footer>
+    
+    
+
     </>
   );
 };
