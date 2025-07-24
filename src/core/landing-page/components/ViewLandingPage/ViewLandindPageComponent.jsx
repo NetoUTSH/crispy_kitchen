@@ -6,19 +6,36 @@ import { EventCardGrid } from "../../../components/EventCardGrid.jsx";
 import { Img_statica } from "../../../components/img_statica/img_statica.jsx";
 import { Card } from "../../../components/card/cardComponet.jsx";
 import { WpButtonComponent } from "../WpButtonComponent/WpButtonComponent.jsx";
+import {Faq} from "../../../components/FAQ/Faq.jsx";
 
 
 export const ViewLandindPageComponent = () => {
   return (
     <>
+    
     <Navbar></Navbar>
     <div className="mb-5">.</div>
     <Carousel_component />
     <Card/>
     <Img_statica />
     <EventCardGrid/>
-    <WpButtonComponent></WpButtonComponent>
-    <Footer></Footer>
+    <Img_statica />
+    <Faq />
+    
+    
+      
+
+    
+    <Footer>
+      
+    </Footer>
+    <WpButtonComponent />
+    
+    
+      
+
+    
+    
     
     
     
