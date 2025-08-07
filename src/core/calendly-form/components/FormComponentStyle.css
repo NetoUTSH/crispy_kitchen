@@ -6,21 +6,3 @@ body{
     backdrop-filter: blur(5px);
     
 }
-
-
-@media only screen and (max-width: 1200px) {
-    
-    body{
-        background-repeat:repeat-y;
-        backdrop-filter: blur(5px);
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    
-    body{
-        background-repeat:repeat-y;
-        backdrop-filter: blur(5px);
-        overflow: scroll;
-    }
-}

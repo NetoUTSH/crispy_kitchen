@@ -1,7 +1,7 @@
 .footer {
   padding: 80px 40px 60px 40px;
   position: relative;
-  width: 100vw;
+  width: 99.5vw;
   margin-left: calc(-50vw + 50%);
   background-image: url('fondo.jpg'); 
   background-size: cover;

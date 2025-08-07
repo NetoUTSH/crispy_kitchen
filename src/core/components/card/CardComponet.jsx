@@ -2,8 +2,9 @@ import { useState } from "react";
 import menuData from "./menuData.json";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import "./CardComponent.css";
 
-const Card = () => {
+export const Card = () => {
   const [showModal, setShowModal] = useState(false);
   const [selectedPlatillo, setSelectedPlatillo] = useState(null);
 
@@ -18,8 +19,9 @@ const Card = () => {
   };
 
   return (
-    <div className="container my-5">
-      
+    <div className="conten">
+      <div className="container pt-5 bg-light ">
+      <h1 className="h1">Special Menus</h1>
       <div className="row justify-content-center">
         {menuData.map((platillo, index) => (
           <div
@@ -118,8 +120,9 @@ const Card = () => {
           </div>
         </div>
       )}
+    </div>      
     </div>
+    
   );
 };
 
-export default Card;

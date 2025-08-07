@@ -32,6 +32,8 @@ export const Footer = () => {
 
   <div className="footer-bottom">
     <p>Copyright © 2022 Crispy Kitchen Co., Ltd.</p>
+    
+
   </div>
 
     </div>

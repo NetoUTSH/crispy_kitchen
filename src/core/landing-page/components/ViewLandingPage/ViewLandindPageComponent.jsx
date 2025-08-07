@@ -1,12 +1,45 @@
-import React from 'react'
-import { Navbar } from '../../../components/navbar/Navbar'
-import { Footer} from '../../../components/footer/Footer'
+
+import { Navbar } from "../../../components/navbar/Navbar";
+import { Footer } from "../../../components/footer/Footer";
+import { Carousel_component } from "../../../components/carrusel/Carrusel.jsx";
+import { EventCardGrid } from "../../../components/EventCardGrid.jsx";
+import { Img_statica } from "../../../components/img_statica/img_statica.jsx";
+import { Card } from "../../../components/card/cardComponet.jsx";
+import { WpButtonComponent } from "../WpButtonComponent/WpButtonComponent.jsx";
+import {Faq} from "../../../components/FAQ/Faq.jsx";
+
 
 export const ViewLandindPageComponent = () => {
   return (
-<>
+    <>
+    
     <Navbar></Navbar>
-    <Footer></Footer>
-</>
-  )
-}
+    <div className="mb-5">.</div>
+    <Carousel_component />
+    <Card/>
+    <Img_statica />
+    <EventCardGrid/>
+    <Img_statica />
+    <Faq />
+    
+    
+      
+
+    
+    <Footer>
+      
+    </Footer>
+    <WpButtonComponent />
+    
+    
+      
+
+    
+    
+    
+    
+    
+
+    </>
+  );
+};

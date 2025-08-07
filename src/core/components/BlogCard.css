@@ -3,6 +3,7 @@
   overflow: hidden;
   height: 100%;
   width: 100%;
+  padding-left: 40px;
 }
 
 .card-image-wrapper img {

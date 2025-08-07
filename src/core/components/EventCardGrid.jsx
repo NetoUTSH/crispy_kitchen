@@ -1,4 +1,6 @@
 import { EventCard } from "./eventCard";
+import './EventCardGrid.css'
+
 const cards = [
   {
     image: 'https://www.tooplate.com/templates/2129_crispy_kitchen/images/news/pablo-merchan-montes-Orz90t6o0e4-unsplash.jpg',
@@ -35,8 +37,10 @@ const cards = [
 
 export const EventCardGrid = () => {
   return (
-    <div className="container">
-      <div className="row">
+    <div className="contenedor">
+      
+      <div className="row bg-white pt-5" id="rowid">
+        <h1>News & Events</h1>
         {cards.map((card, index) => (
           <EventCard key={index} {...card} />
         ))}
