@@ -23,24 +23,40 @@ export const Navbar = () => {
             <ul className="navbar-nav mx-auto">
               <li className="nav-item">
                 <a className="nav-link custom-link" href="#">Pagina principal</a>
-                </li>
+              </li>
               <li className="nav-item">
                 <a className="nav-link custom-link" href="#">Historia</a>
-                </li>
+              </li>
               <li className="nav-item"><a className="nav-link custom-link" href="#">Menu</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link custom-link" href="#">Actualizaciones</a>
-                </li>
+              </li>
               <li className="nav-item">
                 <a className="nav-link custom-link" href="#">Contacto</a>
-                </li>
+              </li>
+
             </ul>
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
                 <Link to="/form" className="nav-link">
                   <button type="button" className="btn reservation-btn btn-danger btn-lg">
                     Reservacion
+                  </button>
+                </Link>
+              </li>
+
+              <li className="nav-item">
+                <Link to="/form" className="nav-link">
+                  <button type="button" className="btn btn-bg btn-lg">
+                    <i class="bi bi-cart-plus icono-color"></i>
+                  </button>
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/form" className="nav-link">
+                  <button type="button" className="btn btn-bg btn-lg">
+                    <i class="bi bi-person-circle icono-color"></i>
                   </button>
                 </Link>
               </li>
