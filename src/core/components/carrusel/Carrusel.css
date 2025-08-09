@@ -4,7 +4,7 @@
     height: 100vh;
     background-color: black;
     color: white;
-    background-image: url("https://cdn.discordapp.com/attachments/1120503923942371369/1395188754758504568/carrusel.jpg?ex=68798a48&is=687838c8&hm=dbb0abc76c33c7ecc5530f4db82ea202720535259d0ab522ec183d16acc80e04&");
+    background-image: url("../../../assets/carrusel.jpg");
     
     background-size:  100% 100%;
     margin-left: calc(-50vw + 50%);
