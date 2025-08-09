@@ -47,14 +47,14 @@ export const Navbar = () => {
               </li>
 
               <li className="nav-item">
-                <Link to="/form" className="nav-link">
+                <Link to="/cart" className="nav-link">
                   <button type="button" className="btn btn-bg btn-lg">
                     <i class="bi bi-cart-plus icono-color"></i>
                   </button>
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/form" className="nav-link">
+                <Link to="/login" className="nav-link">
                   <button type="button" className="btn btn-bg btn-lg">
                     <i class="bi bi-person-circle icono-color"></i>
                   </button>
