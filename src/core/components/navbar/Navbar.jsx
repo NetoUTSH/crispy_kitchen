@@ -1,8 +1,9 @@
-import "./navbar.css"
+import "./navbar.css";
 import { Link } from "react-router-dom";
-
+import { useCart } from "../../../context/CartContext";
 
 export const Navbar = () => {
+  const { totalItems, points } = useCart();
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-white border-bottom fixed-top w-100 shadow-sm">
@@ -19,40 +20,70 @@ export const Navbar = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse justify-content-between" id="navbarNav">
+          <div
+            className="collapse navbar-collapse justify-content-between"
+            id="navbarNav"
+          >
             <ul className="navbar-nav mx-auto">
               <li className="nav-item">
-                <a className="nav-link custom-link" href="#">Pagina principal</a>
+                <a className="nav-link custom-link" href="#">
+                  Página principal
+                </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link custom-link" href="#">Historia</a>
-              </li>
-              <li className="nav-item"><a className="nav-link custom-link" href="#">Menu</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link custom-link" href="#">Actualizaciones</a>
+                <a className="nav-link custom-link" href="#menus">
+                  Menús Especiales
+                </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link custom-link" href="#">Contacto</a>
+                <a className="nav-link custom-link" href="#news&events">
+                  Noticias y Eventos
+                </a>
               </li>
-
+              <li className="nav-item">
+                <a className="nav-link custom-link" href="#faq">
+                  Preguntas Frecuentes
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link custom-link" href="#footer">
+                  Visítanos
+                </a>
+              </li>
             </ul>
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
                 <Link to="/form" className="nav-link">
-                  <button type="button" className="btn reservation-btn btn-danger btn-lg">
+                  <button
+                    type="button"
+                    className="btn reservation-btn btn-danger btn-lg"
+                  >
                     Reservacion
                   </button>
                 </Link>
               </li>
 
-              <li className="nav-item">
+              <li className="nav-item position-relative">
                 <Link to="/cart" className="nav-link">
-                  <button type="button" className="btn btn-bg btn-lg">
-                    <i class="bi bi-cart-plus icono-color"></i>
+                  <button
+                    type="button"
+                    className="btn btn-bg btn-lg position-relative"
+                  >
+                    <i className="bi bi-cart-plus icono-color"></i>
+                    {totalItems > 0 && (
+                      <span className="badge bg-danger rounded-pill position-absolute top-0 start-100 translate-middle">
+                        {totalItems}
+                      </span>
+                    )}
                   </button>
                 </Link>
               </li>
+              <li className="nav-item ms-3">
+                <span className="badge  text-dark p-2 fs-6">
+                  ⭐ {points} pts
+                </span>
+              </li>
+
               <li className="nav-item">
                 <Link to="/login" className="nav-link">
                   <button type="button" className="btn btn-bg btn-lg">
@@ -67,4 +98,3 @@ export const Navbar = () => {
     </>
   );
 };
-

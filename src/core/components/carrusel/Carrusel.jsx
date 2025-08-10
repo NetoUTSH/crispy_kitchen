@@ -18,16 +18,17 @@ export const Carousel_component = () => {
   };
 
   const slides = [
-    { image: "https://media.discordapp.net/attachments/1120503923942371369/1395181107703713804/comida1.jpg?ex=68968429&is=689532a9&hm=f912a774ece66c0d383df8657c3ce9475b0f335083ad7f7b8368b17ffda60b9f&=&format=webp&width=1215&height=810", alt: "Slide 1" },
-    { image: "https://media.discordapp.net/attachments/1120503923942371369/1395181107976208384/comida2.jpg?ex=68968429&is=689532a9&hm=866e8601196f5eb03148ce4edae2c45b78f7feb9aa91c253e6e70033793abfc1&=&format=webp&width=1215&height=810", alt: "Slide 2" },
-    { image: "https://media.discordapp.net/attachments/1120503923942371369/1395181108315820062/comida3.jpg?ex=68968429&is=689532a9&hm=aa3a2e193e73116c15c2a4679f05668859c2741431b81da378f64dc17c6cc840&=&format=webp&width=1215&height=810", alt: "Slide 3" },
+    { image: "/src/assets/c1.jpeg", alt: "Slide 1" },
+    { image: "/src/assets/c2.jpeg", alt: "Slide 2" },
+    { image: "/src/assets/c3.jpeg", alt: "Slide 3" },
   ];
- return (
+  return (
     <div className="contenedor-principal ">
       <div className="contenedor-texto">
         <h1>Delicious Steaks</h1>
         <p className="rating">
-          <strong>4.4/5</strong> ⭐⭐⭐⭐<br />
+          <strong>4.4/5</strong> ⭐⭐⭐⭐
+          <br />
           From <strong>1,206+</strong> Customer Reviews
         </p>
       </div>

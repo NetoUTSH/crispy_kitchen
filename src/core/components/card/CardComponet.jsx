@@ -3,10 +3,12 @@ import menuData from "./menuData.json";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./CardComponent.css";
+import { useCart } from "../../../context/CartContext";
 
-export const Card = ({ onAddToCart }) => {
+export const Card = () => {
+  const { addToCart } = useCart();
   return (
-    <div className="conten" id="menus">
+    <div className="conten " id="menus">
       <div className="container pt-5 bg-light">
         <h1 className="h1">Menús Especiales</h1>
         <div className="row justify-content-center">
@@ -40,7 +42,10 @@ export const Card = ({ onAddToCart }) => {
                   </div>
 
                   <div className="d-flex align-items-center mt-3">
-                    <span className="me-2 fw-semibold">{platillo.estrellas}</span>/5
+                    <span className="me-2 fw-semibold">
+                      {platillo.estrellas}
+                    </span>
+                    /5
                     <span className="text-warning me-2 ms-2">
                       {[...Array(5)].map((_, i) => (
                         <i
@@ -59,7 +64,7 @@ export const Card = ({ onAddToCart }) => {
 
                 <button
                   className="btn btn-warning"
-                  onClick={() => onAddToCart(platillo)}
+                  onClick={() => addToCart(platillo)}
                 >
                   Agregar
                 </button>
