@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-<footer className="footer">
+<footer className="footer" id="footer">
   <div className="footer-container">
   <h2 className="footer-title">Crispy Kitchen</h2>
   <div className="footer-content">
@@ -24,10 +24,10 @@ export const Footer = () => {
     <div className="footer-section social">
       <h3>Social</h3>
       <div className="social-icons">
-        <a href="#"><i className="fab fa-facebook-f"></i></a>
-        <a href="#"><i className="fab fa-instagram"></i></a>
-        <a href="#"><i className="fab fa-twitter"></i></a>
-        <a href="#"><i className="fab fa-youtube"></i></a>
+        <a href="https://facebook.com"><i className="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com"><i className="fab fa-instagram"></i></a>
+        <a href="https://x.com"><i className="fab fa-twitter"></i></a>
+        <a href="https://youtube.com"><i className="fab fa-youtube"></i></a>
       </div>
 
   <div className="footer-bottom">

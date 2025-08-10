@@ -52,7 +52,7 @@ const faqs = [
 
 export const Faq = () => {
   return (
-    <div className="contenedor py-5 bg">
+    <div className="contenedor py-5 bg" id="faq">
       <div className="row align-items-start">
         {/* Imagen - 6 columnas */}
         <div className="col-md-6 mb-4 mb-md-0 faq-image">

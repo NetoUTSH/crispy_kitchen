@@ -22,18 +22,18 @@ export const Navbar = () => {
           <div className="collapse navbar-collapse justify-content-between" id="navbarNav">
             <ul className="navbar-nav mx-auto">
               <li className="nav-item">
-                <a className="nav-link custom-link" href="#">Pagina principal</a>
+                <a className="nav-link custom-link" href="#">Página principal</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link custom-link" href="#">Historia</a>
+                <a className="nav-link custom-link" href="#menus">Menús especiales</a>
               </li>
-              <li className="nav-item"><a className="nav-link custom-link" href="#">Menu</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link custom-link" href="#">Actualizaciones</a>
+              <li className="nav-item"><a className="nav-link custom-link" href="#news&events">Noticias y Eventos</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link custom-link" href="#">Contacto</a>
+                <a className="nav-link custom-link" href="#faq">Preguntas Frecuentes</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link custom-link" href="#footer">Visítanos</a>
               </li>
 
             </ul>

@@ -19,7 +19,7 @@ export const Card = () => {
   };
 
   return (
-    <div className="conten">
+    <div className="conten" id="menus">
       <div className="container pt-5 bg-light ">
       <h1 className="h1">Special Menus</h1>
       <div className="row justify-content-center">

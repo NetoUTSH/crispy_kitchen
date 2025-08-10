@@ -118,3 +118,26 @@ button:hover {
   padding: 0 40px;
   position: relative;
 }
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-title {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .footer-section {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+  }
+}

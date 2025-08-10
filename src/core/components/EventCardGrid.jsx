@@ -37,7 +37,7 @@ const cards = [
 
 export const EventCardGrid = () => {
   return (
-    <div className="contenedor">
+    <div className="contenedor" id="news&events">
       
       <div className="row bg-white pt-5" id="rowid">
         <h1>News & Events</h1>
