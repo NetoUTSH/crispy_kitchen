@@ -6,7 +6,7 @@ import "./CardComponent.css";
 
 export const Card = ({ onAddToCart }) => {
   return (
-    <div className="conten">
+    <div className="conten" id="menus">
       <div className="container pt-5 bg-light">
         <h1 className="h1">Menús Especiales</h1>
         <div className="row justify-content-center">
