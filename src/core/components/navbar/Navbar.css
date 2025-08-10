@@ -5,12 +5,14 @@
     transition: color 0.3s ease !important;
     margin: 0 30px !important;
     font-size: large !important;
+    margin: 0 8px !important;
 }
 
 .custom-link:hover {
     color: tomato !important;
     text-decoration: none !important;
 }
+
 
 .navbar-title {
   font-size: 1.5rem;
@@ -62,4 +64,9 @@
 
 .btn-bg{
   background-color: rgba(255, 255, 255, 0);
+}
+
+.container.px-4 {
+    padding-left: 1px !important;
+    padding-right: 1px !important;
 }

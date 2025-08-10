@@ -29,7 +29,8 @@ const faqs = [
       "Sí, contamos con un menú infantil con porciones adecuadas y platillos pensados para los más pequeños.",
   },
   {
-    question: "¿Tienen opciones sin gluten o para personas con alergias alimentarias?",
+    question:
+      "¿Tienen opciones sin gluten o para personas con alergias alimentarias?",
     answer:
       "Algunos de nuestros platillos pueden ser preparados sin gluten o sin ciertos alérgenos. Por favor, avísanos al hacer tu pedido para tomar precauciones.",
   },
@@ -52,7 +53,7 @@ const faqs = [
 
 export const Faq = () => {
   return (
-    <div className="contenedor py-5 bg">
+    <div className="contenedor py-5 bg " id="faq">
       <div className="row align-items-start">
         {/* Imagen - 6 columnas */}
         <div className="col-md-6 mb-4 mb-md-0 faq-image">
@@ -70,9 +71,7 @@ export const Faq = () => {
             <div key={index} className="faq-item mb-2">
               <div className="faq-question   rounded shadow-lg">
                 <strong>{faq.question}</strong>
-                <div className="faq-answer mt-1 text-muted">
-                  {faq.answer}
-                </div>
+                <div className="faq-answer mt-1 text-muted">{faq.answer}</div>
               </div>
             </div>
           ))}

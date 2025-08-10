@@ -27,27 +27,27 @@ export const Navbar = () => {
             <ul className="navbar-nav mx-auto">
               <li className="nav-item">
                 <a className="nav-link custom-link" href="#">
-                  Pagina principal
+                  Página principal
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link custom-link" href="#">
-                  Historia
+                <a className="nav-link custom-link" href="#menus">
+                  Menús Especiales
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link custom-link" href="#">
-                  Menu
+                <a className="nav-link custom-link" href="#news&events">
+                  Noticias y Eventos
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link custom-link" href="#">
-                  Actualizaciones
+                <a className="nav-link custom-link" href="#faq">
+                  Preguntas Frecuentes
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link custom-link" href="#">
-                  Contacto
+                <a className="nav-link custom-link" href="#footer">
+                  Visítanos
                 </a>
               </li>
             </ul>
