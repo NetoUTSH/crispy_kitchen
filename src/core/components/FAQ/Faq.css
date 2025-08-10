@@ -1,8 +1,7 @@
 .faq-answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease, padding 0.3s ease;
-  
+  transition: max-height 0.4s ease, padding 0.3s ease;  
   border-radius: 2px;
   color: black;
   background-color: white;
@@ -13,8 +12,7 @@
   font-size: 17px;
   background-color: white;
   transition: all 0.4s ease-in-out;
-  padding-top: 5px;
-  padding-bottom:2px;
+  padding: 2px;
 }
 .faq-question:hover {
   background-color: rgb(205, 133, 33); 
