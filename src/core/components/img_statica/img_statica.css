@@ -1,0 +1,27 @@
+.img_statica-container {
+  background-image: url("../../../assets/imagenestatica.jpeg");
+  height: 50vh;
+  width: 99.5vw;
+  margin-left: calc(-50vw + 50%);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+@media (max-width: 1024px) {
+  .img_statica-container {
+    height: 40vh;
+    background-attachment: scroll;
+    background-size:  100% 100%;
+    background-repeat: no-repeat; 
+  }
+}
+
+@media (max-width: 600px) {
+  .img_statica-container {
+    height: 30vh;
+    background-attachment: scroll;
+    background-size:  100% 100%;
+    background-repeat: no-repeat; 
+  }
+}

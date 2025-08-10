@@ -5,7 +5,7 @@ export const FormComponent = () => {
   return (
 
     <>
-    <h2 className='h2'>hola</h2>
+    <h2 className='h2'></h2>
     </>
   )
 }
