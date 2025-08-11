@@ -18,9 +18,9 @@ export const Carousel_component = () => {
   };
 
   const slides = [
-    { image: "/src/assets/c1.jpeg", alt: "Slide 1" },
-    { image: "/src/assets/c2.jpeg", alt: "Slide 2" },
-    { image: "/src/assets/c3.jpeg", alt: "Slide 3" },
+    { image: "/assets/c1.jpeg", alt: "Slide 1" },
+    { image: "/assets/c2.jpeg", alt: "Slide 2" },
+    { image: "/assets/c3.jpeg", alt: "Slide 3" },
   ];
   return (
     <div className="contenedor-principal ">

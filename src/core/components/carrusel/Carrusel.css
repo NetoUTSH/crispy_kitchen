@@ -4,7 +4,7 @@
     height: 100vh;
     background-color: black;
     color: white;
-    background-image: url("../../../assets/carrusel.jpg");
+    background-image: url("/assets/carrusel.jpg");
     
     background-size:  100% 100%;
     margin-left: calc(-50vw + 50%);
