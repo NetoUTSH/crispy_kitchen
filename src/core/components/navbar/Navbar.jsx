@@ -1,9 +1,31 @@
 import "./navbar.css";
 import { Link } from "react-router-dom";
 import { useCart } from "../../../context/CartContext";
+import { useNavigate } from "react-router-dom";
+import { useEffect,useState } from "react";
+import Swal from "sweetalert2";
 
 export const Navbar = () => {
   const { totalItems, points } = useCart();
+  const [isLogged, setIsLogged] = useState(false);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const token = localStorage.getItem("jwtToken"); 
+    setIsLogged(!!token);
+  }, []);
+
+  const handleLogout = () => {
+    localStorage.removeItem("jwtToken");
+    setIsLogged(false);
+    navigate("/");
+    Swal.fire({
+      title: "Has salido de tu cuenta",
+      icon: "success",
+    });
+  };
+
+
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-white border-bottom fixed-top w-100 shadow-sm">
@@ -45,7 +67,7 @@ export const Navbar = () => {
                   Preguntas Frecuentes
                 </a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item align-self-center">
                 <a className="nav-link custom-link" href="#footer">
                   Visítanos
                 </a>
@@ -78,18 +100,29 @@ export const Navbar = () => {
                   </button>
                 </Link>
               </li>
-              <li className="nav-item ms-3">
+              <li className="nav-item align-self-center">
                 <span className="badge  text-dark p-2 fs-6">
                   ⭐ {points} pts
                 </span>
               </li>
 
               <li className="nav-item">
-                <Link to="/login" className="nav-link">
-                  <button type="button" className="btn btn-bg btn-lg">
-                    <i class="bi bi-person-circle icono-color"></i>
+                {isLogged ? (
+                  <div className="nav-link">
+                    <button
+                    onClick={handleLogout}
+                    className="btn btn-bg btn-lg">
+                    <i className="bi bi-box-arrow-right icono-color"></i>
                   </button>
-                </Link>
+                  </div>
+                  
+                ) : (
+                  <Link to="/login" className="nav-link">
+                    <button type="button" className="btn btn-bg btn-lg">
+                      <i className="bi bi-person-circle icono-color"></i>
+                    </button>
+                  </Link>
+                )}
               </li>
             </ul>
           </div>

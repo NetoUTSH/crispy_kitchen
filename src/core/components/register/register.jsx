@@ -1,7 +1,65 @@
-import React from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Link,useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const RegisterForm = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    password: "",
+  });
+
+  navigate = useNavigate()
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value, 
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault(); 
+
+    try {
+      const response = await fetch("http://localhost:8080/api/v1/auth/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        Swal.fire({
+                title: "Hubo un error en el registro",
+                icon: "error",
+        });
+      }else{
+        
+        const data = await response.json();
+
+        const jwtToken = data.token;
+  
+        localStorage.setItem("JwtToken",jwtToken)
+  
+        setFormData({ name: "", email: "", password: "" });
+  
+        navigate("/");
+      }
+
+      
+
+    } catch (error) {
+      console.error("Error:", error.message);
+      Swal.fire({
+        title: "Hubo un error al hacer el registro",
+        icon: "error",
+      });
+    }
+  };
+
   return (
     <div
       className="d-flex justify-content-center align-items-center "
@@ -24,19 +82,21 @@ const RegisterForm = () => {
         }}
       >
         <h2 className="text-center mb-4">Registro</h2>
-        <form action="https://formspree.io/f/xzblbbgd" method="POST">
+        <form onSubmit={handleSubmit}>
           <div className="form-floating mb-3">
             <input
               type="text"
               className="form-control border-warning bg-transparent text-white"
-              id="username"
-              name="Username"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
               placeholder="Usuario"
               required
               autoFocus
               autoComplete="off"
             />
-            <label htmlFor="username" style={{ color: "#e67e22" }}>
+            <label htmlFor="name" style={{ color: "#e67e22" }}>
               Usuario
             </label>
           </div>
@@ -46,7 +106,9 @@ const RegisterForm = () => {
               type="email"
               className="form-control border-warning bg-transparent text-white"
               id="email"
-              name="Email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
               placeholder="Email"
               required
               autoComplete="off"
@@ -62,6 +124,8 @@ const RegisterForm = () => {
               className="form-control border-warning bg-transparent text-white"
               id="password"
               name="password"
+              value={formData.password}
+              onChange={handleChange}
               placeholder="Contraseña"
               required
             />
@@ -109,9 +173,9 @@ const RegisterForm = () => {
           <div className="text-center">
             <p className="mb-0" style={{ color: "white" }}>
               ¿Ya tienes cuenta?{" "}
-              <a href="login.html" className="fw-bold text-white text-decoration-none">
+              <Link to={"/login"} className="fw-bold text-white text-decoration-none">
                 Login
-              </a>
+              </Link>
             </p>
           </div>
         </form>
