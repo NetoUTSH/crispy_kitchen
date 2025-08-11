@@ -74,7 +74,7 @@ export const CartPage = () => {
                       className="btn btnControl btn-sm me-2"
                       onClick={() => decreaseQuantity(item.nombre)}
                     >
-                      -
+                      
                     </button>
                     {item.cantidad}
                     <button

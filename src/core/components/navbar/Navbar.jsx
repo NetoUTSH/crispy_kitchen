@@ -48,9 +48,9 @@ export const Navbar = () => {
           >
             <ul className="navbar-nav mx-auto">
               <li className="nav-item">
-                <a className="nav-link custom-link" href="#">
+                <Link className="nav-link custom-link" to={"/"}>
                   Página principal
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link custom-link" href="#menus">
