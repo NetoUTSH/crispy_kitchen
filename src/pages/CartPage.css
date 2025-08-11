@@ -1,33 +1,32 @@
-.cont{
-    color: white;
-    background-color: rgba(0,0,0,0.6);
-    width: 60vw;
-    padding: 5rem;
-    border: 1px solid white;
-    border-radius: 10px;
-}
-.eliminar{
-    border: none;
-
+.cont {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  max-width: 900px; /* límite máximo */
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 10px;
 }
 
-.btnControl{
-    background-color: rgb(223, 223, 223);
+.eliminar {
+  border: none;
 }
 
-.imgPlatillo{
-    border-radius: 10px;
-    margin-right: 20px;
-}
-.btnDiscount{
-    background-color: chocolate;
-    font-weight: 700;
-    color: rgb(102, 51, 15);
-    margin-right: 10px;
+.btnControl {
+  background-color: rgb(223, 223, 223);
 }
 
-.btnFinish{
-    background-color: rgb(129, 201, 58);
-    color: rgb(79, 122, 36);;
-    font-weight: 700;
+.imgPlatillo {
+  border-radius: 10px;
+}
+
+.btnDiscount {
+  background-color: chocolate;
+  font-weight: 700;
+  color: rgb(102, 51, 15);
+}
+
+.btnFinish {
+  background-color: rgb(129, 201, 58);
+  color: rgb(79, 122, 36);
+  font-weight: 700;
 }
