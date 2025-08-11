@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Link,useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const LoginForm = () => {
@@ -22,16 +22,19 @@ const LoginForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("https://emailsendback-production.up.railway.app/api/v1/auth/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          email: formData.email,
-          password: formData.password,
-        }),
-      });
+      const response = await fetch(
+        "https://emailsendback-production.up.railway.app/api/v1/auth/login",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email: formData.email,
+            password: formData.password,
+          }),
+        }
+      );
 
       if (!response.ok) {
         Swal.fire({
@@ -39,8 +42,7 @@ const LoginForm = () => {
           icon: "info",
           confirmButtonText: "Aceptar",
         });
-        
-      }else{
+      } else {
         const data = await response.json();
         const token = data.token;
         localStorage.setItem("jwtToken", token);
@@ -60,13 +62,18 @@ const LoginForm = () => {
     <div
       className="d-flex justify-content-center align-items-center"
       style={{
+        borderRadius: "15px",
         backgroundImage:
           "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6))",
         backgroundPosition: "center",
-        minHeight: "100vh",
+        Height: "100vh",
+        width: "100%",
       }}
     >
-      <div className="card p-4 shadow-lg bg-transparent border border-light rounded-4 backdrop-blur" style={{ minWidth: "320px", maxWidth: "420px" }}>
+      <div
+        className="card p-4 shadow-lg bg-transparent border border-light rounded-4 backdrop-blur"
+        style={{ minWidth: "320px", maxWidth: "420px" }}
+      >
         <h2 className="text-center text-white mb-4">Login</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-floating mb-3">
@@ -82,7 +89,9 @@ const LoginForm = () => {
               value={formData.email}
               onChange={handleChange}
             />
-            <label htmlFor="email" className="text-warning">Email</label>
+            <label htmlFor="email" className="text-warning">
+              Email
+            </label>
           </div>
 
           <div className="form-floating mb-3">
@@ -96,7 +105,9 @@ const LoginForm = () => {
               value={formData.password}
               onChange={handleChange}
             />
-            <label htmlFor="password" className="text-warning">Contraseña</label>
+            <label htmlFor="password" className="text-warning">
+              Contraseña
+            </label>
           </div>
 
           <div className="d-flex justify-content-between align-items-center mb-3 text-white small">
@@ -122,7 +133,10 @@ const LoginForm = () => {
           <div className="text-center text-white">
             <p className="mb-0">
               ¿No tienes cuenta?{" "}
-              <Link to={"/register"} className="text-white fw-bold text-decoration-none">
+              <Link
+                to={"/register"}
+                className="text-white fw-bold text-decoration-none"
+              >
                 Regístrate
               </Link>
             </p>

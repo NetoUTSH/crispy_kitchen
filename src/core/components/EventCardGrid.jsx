@@ -42,7 +42,9 @@ const cards = [
 export const EventCardGrid = () => {
   return (
     <div id="rowid">
-      <h1 className="mb-3">Noticias y Eventos</h1>
+      <h1 className="mb-3 news&" id="news&events">
+        Noticias y Eventos
+      </h1>
       <div className="row">
         {cards.map((card, index) => (
           <EventCard key={index} {...card} />

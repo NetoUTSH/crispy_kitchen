@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Link,useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const RegisterForm = () => {
@@ -10,47 +10,46 @@ const RegisterForm = () => {
     password: "",
   });
 
-  navigate = useNavigate()
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value, 
+      [e.target.name]: e.target.value,
     });
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault(); 
+    e.preventDefault();
 
     try {
-      const response = await fetch("https://emailsendback-production.up.railway.app/api/v1/auth/register", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://emailsendback-production.up.railway.app/api/v1/auth/register",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       if (!response.ok) {
         Swal.fire({
-                title: "Hubo un error en el registro",
-                icon: "error",
+          title: "Hubo un error en el registro",
+          icon: "error",
         });
-      }else{
-        
+      } else {
         const data = await response.json();
 
         const jwtToken = data.token;
-  
-        localStorage.setItem("JwtToken",jwtToken)
-  
+
+        localStorage.setItem("JwtToken", jwtToken);
+
         setFormData({ name: "", email: "", password: "" });
-  
+
         navigate("/");
       }
-
-      
-
     } catch (error) {
       console.error("Error:", error.message);
       Swal.fire({
@@ -141,7 +140,11 @@ const RegisterForm = () => {
               id="terms"
               required
             />
-            <label className="form-check-label" htmlFor="terms" style={{ color: "white" }}>
+            <label
+              className="form-check-label"
+              htmlFor="terms"
+              style={{ color: "white" }}
+            >
               Acepto los términos y condiciones
             </label>
           </div>
@@ -173,7 +176,10 @@ const RegisterForm = () => {
           <div className="text-center">
             <p className="mb-0" style={{ color: "white" }}>
               ¿Ya tienes cuenta?{" "}
-              <Link to={"/login"} className="fw-bold text-white text-decoration-none">
+              <Link
+                to={"/login"}
+                className="fw-bold text-white text-decoration-none"
+              >
                 Login
               </Link>
             </p>
