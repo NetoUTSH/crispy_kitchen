@@ -11,12 +11,12 @@ export const Navbar = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const token = localStorage.getItem("jwtToken"); 
+    const token = localStorage.getItem("JwtToken"); 
     setIsLogged(!!token);
   }, []);
 
   const handleLogout = () => {
-    localStorage.removeItem("jwtToken");
+    localStorage.removeItem("JwtToken");
     setIsLogged(false);
     navigate("/");
     Swal.fire({

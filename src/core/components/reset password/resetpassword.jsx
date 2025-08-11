@@ -48,11 +48,7 @@ const ResetPassword = () => {
    
       }
 
-      Swal.fire({
-              title: "Contraseña restablecida con èxito",
-              icon: "success",
-              confirmButtonText: "Aceptar",
-      });
+      
 
       // Limpias los inputs si quieres:
       setNewPassword("");
@@ -60,6 +56,13 @@ const ResetPassword = () => {
 
       // Opcional: redirigir a login o a otra página
       navigate("/login")
+      localStorage.removeItem("recoverEmail");
+      
+      Swal.fire({
+        title: "Contraseña restablecida con èxito",
+        icon: "success",
+      });
+
     } catch (error) {
       Swal.fire({
               title: "Hubo un error al restablecer la contrasena",
