@@ -4,6 +4,8 @@ import './FormComponentStyle.css'
 
 export const FormComponent = () => {
   return (
-    <InlineWidget  styles={{ width: "1200px", height: "700px" }} url='https://calendly.com/arturo1414zv/30min'/>  
+    
+    <InlineWidget style={{Width: "1000px " ,height:"700px" }}  url='https://calendly.com/manolitokawai/30min'/>  
+    
   )
 }
